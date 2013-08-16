@@ -1,11 +1,8 @@
 from config import domain, api_path
 import json
-import urllib2
+import requests
 
 rest_api = "/posts?filter[s]=insulin"
-
 url = "http://"+ domain + "/"+ api_path + rest_api
-
-data = json.load(urllib2.urlopen(url))
-
-print data
+r = requests.get(url)
+print r.json()
