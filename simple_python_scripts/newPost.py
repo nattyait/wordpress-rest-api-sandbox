@@ -1,11 +1,7 @@
-from config import domain, api_path
+from config import domain, api_path, username, password
 import json
 import requests
 from requests.auth import HTTPBasicAuth
-
-
-username = "natty"
-password = "TheNatty69"
 
 rest_api = "/posts"
 
